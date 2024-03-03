@@ -1,0 +1,841 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    font-size: smaller;
+    z-index: 9;
+    box-shadow: 0px 1.64744px 8.2372px 0px black;
+}
+
+@media screen and (min-width:0) and (max-width:320px) {
+    nav {
+        display: none;
+    }
+
+    .borgar {
+        display: block !important;
+    }
+
+    .singup,
+    .login {
+        display: none !important;
+    }
+
+    .user .con {
+        width:calc(100% - 40px);
+    }
+}
+
+.borgar {
+    display: none;
+}
+
+.singup,
+.login {
+    display: block;
+}
+
+header .container {
+    width: calc(100% - 50px);
+    margin: auto;
+}
+
+header .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    width: 70%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+nav,
+.logo {
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav li a {
+    text-transform: uppercase;
+}
+
+nav a.active {
+    background-color: #f1f1f3;
+    color: #262626;
+    padding: 8px;
+    text-align: center;
+
+}
+
+.auth {
+    width: 30%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+header .auth .singup {
+    color: #262626;
+    text-align: center;
+    text-decoration: none;
+}
+
+header .auth .login {
+    background-color: #FF9500;
+    color: #FFFFFF;
+    margin-right: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    right: 0;
+}
+
+.icons .lineimg {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: -25px;
+    top: -30px;
+}
+
+.icons .img2 {
+    border-radius: 10px;
+    flex-shrink: 0;
+    height: auto;
+    width: 60px;
+    margin: 5px 10px 15px 20px;
+}
+
+
+.icon,
+.img2 {
+    display: flex;
+    background-color: aliceblue;
+    margin-top: 5%;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.icon h2 {
+    justify-content: center;
+    margin-top: 4%;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+
+}
+
+.icons .icon .org {
+    color: #FF9500;
+    font-size: 35px;
+    font-family: border;
+    font-style: normal;
+}
+
+.icons .text {
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.icons .auth {
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 30px 20px 15px 20px;
+    width: calc(100% - 130px);
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+    flex-wrap: wrap;
+}
+
+.icons .auth .ExploreCourses {
+    background-color: #FF9500;
+    color: #FFFFFF;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.icons .auth .ViewPricing {
+    background-color: #FFFFFF;
+    color: #262626;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.images {
+    margin-bottom: 20px;
+}
+
+.images .container {
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    border-radius: 10px;
+}
+
+.images .container .item {
+     border-right: 1px solid rgb(198, 198, 198);
+     width: calc(100% / 7 );
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 5px 10px;
+     min-width: fit-content;
+}
+
+.images .container .item:last-child {
+    border-right: none;
+}
+
+.images .container .item img {
+    width: 70%;
+}
+
+@media screen and (max-width: 450px) {
+    .images .container {
+        padding: 5px;
+    }
+    .images .container .item {
+        width: calc( (100% - 30px) /  3);
+        padding: 3px;
+    }
+}
+
+
+
+.user {
+    display: flex;
+    border-radius: 1px;
+    flex-shrink: 0;
+    height: auto;
+    object-fit: scale-down;
+    vertical-align: top;
+    width: 40px;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user .con {
+    border-radius: 10px;
+    flex-shrink: 0;
+    height: auto; 
+    margin-bottom: 10px; 
+    object-fit: contain;
+    vertical-align: top;
+    width: 1500px; 
+    
+}
+
+
+.benefits .container{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.benefits .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.benefits h2{
+    color: #262626;
+    flex-shrink: 0;
+    font-family: Be Vietnam Pro, 'Source Sans Pro';
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.benefits p{
+    width: 1000px;
+    font-family: Be Vietnam Pro, 'Source Sans Pro';
+    font-weight: 400;
+    display:flex;
+    font-size: 18px;
+    margin-left: 0;
+    color: #191919;
+    display: flex;
+} 
+
+
+
+.benefits button, .our button{
+     background-color: rgb(205, 202, 202);
+  color: #000;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: -50px;
+  float: right;
+}
+.items-container1,.items-container2{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    width: 25%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .card:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .number {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .h2 h2{
+    font-size: 17px;
+    margin-bottom: 5px;
+ }
+
+  .p p{
+    font-size: 16px;
+    color: #333333;
+  }
+
+  .image {
+    margin-top: auto;
+  }
+
+  .our .container{
+    align-items: flex-end;
+    display: flex;
+    flex-shrink: 0;
+    height: 13.2rem;
+    margin-bottom: 8rem;
+    width: 100%;
+  }
+
+  .our h2{
+    color: #262626;
+    flex-shrink: 0;
+    font-family: Be Vietnam Pro, 'Source Sans Pro';
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 9px;
+    white-space: nowrap;
+  }
+
+  .our p{
+    width: 1000px;
+    font-family: Be Vietnam Pro, 'Source Sans Pro';
+    font-weight: 400;
+    display:flex;
+    font-size: 18px;
+    margin-left: 0;
+    color: #191919;
+    display: flex;
+  }
+
+.cards11{
+    display: flex;
+    justify-content: center;
+    padding: 11px;
+    gap: 20px;
+    justify-content: space-between;
+}
+.card-details{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width:calc( (100% - 30px) / 2);
+    box-shadow: 0px 1.64744px 8.2372px 0px black;
+    background-color: #F7F7F8;
+
+}
+
+.cardimg{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 135.09/99.079;
+    filter: brightness(70%);
+    display: inline;
+}
+.imgcours{
+    height: 309px;
+}
+.card-details .row1{
+    display: flex;
+    gap: 10px;
+}
+.card-details button{
+    color: #000;
+    background-color:#f8f8f831;
+    padding: 10px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    border: 1px solid var(--White-95, #F1F1F3);;
+    border-radius: 2px;
+}
+
+
+.card-details h2{
+    font-size:24px ;
+    align-self: stretch;
+}
+
+.card-details p{
+    color: var(--Grey-30, #4C4C4D);
+    font-family: Be Vietnam Pro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.card-details .get{
+    display: flex;
+    padding: 18px 240px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background:#f1f1fa45;
+}
+.cards2 p{
+    padding: 20px;
+    
+}
+
+
+.Testimonials{
+    width: 700px; 
+    background-color: #f8f8f8; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+.testt {
+    padding: 20px;
+}
+
+
+p {
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+.span {
+    text-align: center;
+    display: inline ;
+    align-items: center;
+   
+}
+
+.Testimonials img {
+    width: 55px; 
+    border-radius: 50%;
+    margin-right: 100%;
+}
+
+h3{
+    margin: 0;
+    margin-right: 450px;
+    margin-top: -40px;
+}
+
+.testimon button{
+    margin-left: 10px;
+}
+/*
+.Testimonials{
+    padding: 20px 0;
+    background-color: #fff;
+    width: 50%;
+    height: 50%;
+}
+.Testimonials h2{
+    margin-bottom: 20px;
+}
+.Testimonials .row{
+    gap: 40px;
+}
+*/
+
+
+
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.all .container{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 700px;
+    height: 100%;
+}
+
+.all .h2 {
+    color: #000;
+    background-color:#FFEACC;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.all .number {
+    color: #000000;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.all .number span{
+    color: var(--Grey-30, #4C4C4D);
+    font-family: Be Vietnam Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.all .sub-container{
+    margin-top: 20px;
+    border-radius: 14px 14px 0px 0px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--Absolute-White, #FFF);
+}
+
+.all .sub-container .avaliable{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+}
+.all .features-item1,.features-item2,.features-item3,.features-item4,.features-item5,.features-item6,.features-item7{
+    border-radius: 8px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    display: flex;
+    padding: 14px;
+    align-items: center;
+    gap: 15px;
+    align-self: stretch;
+}
+.all .features-item{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+}
+
+.all .features-item img {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    background-color: #FFF4E5;
+}
+
+
+
+.all button {
+    background-color: #FF9500; 
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+
+
+
+footer {
+    padding: 50px 0;
+    background-color: #FFFFFF;
+    color: #000;
+}
+
+footer .row {
+    gap: 10px;
+}
+
+.footer-left-side,
+.footer-right-side {
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.footer-left-side {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+    width: 30%;
+}
+
+footer .logo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer .email {
+    color: #000;
+    display: flex;
+    font-size: 16px;
+}
+
+footer img {
+    width: 20px;
+}
+
+/*
+footer .icons svg{
+    width: 40px;
+    flex-wrap: wrap;
+    height: 30px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    display: flex;
+}
+*/
+footer a {
+    color: #000;
+    font-size: 14px;
+}
+
+footer img {
+    width: 20px;
+}
+
+footer .text {
+    display: flex;
+    gap: 15px;
+}
+
+footer .text svg {
+    width: 20px;
+    flex-wrap: wrap;
+    height: 20px;
+    border: 1px solid #fff;
+    padding: 8.5px;
+    box-sizing: content-box;
+}
+
+footer .footer-right-side {
+    display: flex;
+    gap: 10PX;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+
+}
+
+.footer-item,
+.buttons h2 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-shrink: 0;
+    height: 30px;
+    margin: auto;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    width: calc((100% - 120px) / 5);
+}
+
+.footer-item nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+footer .buttons {
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    height: 100%;
+    padding: 20px;
+}
+
+footer .buttons nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+footer .icons {
+    display: inline;
+    gap: 15px;
+}
+
+footer .social {
+    color: #262626;
+    font-family: Be Vietnam Pro, 'Source Sans Pro';
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+footer .social svg {
+    width: 20px;
+    flex-wrap: wrap;
+    height: 20px;
+    border: 1px solid #262626;
+    padding: 8.5px;
+    box-sizing: content-box;
+}
+
+footer .last {
+    color: #646467;
+    flex-shrink: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+}
